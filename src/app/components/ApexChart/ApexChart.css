@@ -1,0 +1,22 @@
+
+.apexcharts-toolbar {
+    display: none;
+}
+
+.apexcharts-menu-icon  {
+    display: none;
+}
+
+
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+    /* justify-content: center; */
+    justify-content: end !important;
+}
+
+.apexcharts-legend-marker{
+    border-radius: 50% !important;
+}
+.apexcharts-legend-series{
+    margin-left: 35px !important;
+
+}
