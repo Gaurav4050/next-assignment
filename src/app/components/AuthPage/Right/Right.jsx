@@ -16,10 +16,10 @@ const Right = () => {
 
   // if (session.status === "loading") return <div>Loading...</div>;
 
-  if (session.status === "authenticated") {
-    // redirect to dashboard
-    redirect("/dashboard");
-  }
+  // if (session.status === "authenticated") {
+  //   // redirect to dashboard
+  //   redirect("/dashboard");
+  // }
 
   return (
     <div>
