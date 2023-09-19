@@ -293,6 +293,7 @@ text-decoration: underline;
     }
     .dasboaard-container .dashboard-left{
         width: 50%;
+        z-index: 900;
 
     }
 }
@@ -302,5 +303,54 @@ text-decoration: underline;
     }
     .bottom-box3 .text1 {
         text-align: center;
+    }
+    .bottom-box1 {
+        padding: 15px 0px;
+        background: #FFFFFF;
+        color: #000000;
+        border-radius: 15px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .top-product{
+        position: relative;
+    left: -60px;
+    }
+}
+
+@media screen and (max-width:380px){
+
+    .dasboaard-container .dashboard-left{
+        width: 50%;
+        z-index: 900;
+        font-size:14px
+
+    }
+    .right-buttons .title{
+        font-size: 11px;
+    }
+    
+}
+@media screen and (max-width:440px){
+
+    .top-product{
+        display: none;
+    }
+    .right-buttons .title{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:350px){
+
+    .dasboaard-container .dashboard-left{
+        width: 50%;
+        z-index: 900;
+        font-size:12px
+
     }
 }
