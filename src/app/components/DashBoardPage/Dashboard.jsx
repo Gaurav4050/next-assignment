@@ -38,7 +38,7 @@ import { redirect } from "next/navigation";
 const Dashboard = () => {
   const [show, setShow] = React.useState(false);
   const [bar, setBar] = React.useState(true);
-  const [flag, setFlag] = React.useState(true);
+  const [flag, setFlag] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
@@ -69,10 +69,11 @@ const Dashboard = () => {
     setFlag(!flag);
   };
   const updateFlag = () => {
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
-      setFlag(false);
-    } else {
+    if (typeof window !== "undefined" && window.innerWidth > 768) {
       setFlag(true);
+      console.log("heklo");
+    } else {
+      setFlag(false);
     }
   };
 
